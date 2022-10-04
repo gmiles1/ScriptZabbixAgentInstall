@@ -61,7 +61,7 @@ if (Test-Path "$env:TEMP\zabbix_agent.msi") {
 
 # Firewall rules (Oracle Linux)
 Write-Host  ' >>> Creating firewall rule '
-New-NetFirewallRule -DisplayName "Zabbix Agent" -Direction inbound -Profile Any -Action Allow -LocalPort 10051 -Protocol TCP | Out-File -Append -FilePath "$logFile"
+New-NetFirewallRule -DisplayName "Zabbix Agent" -Direction inbound -Profile Any -Action Allow -LocalPort 10050 -Protocol TCP | Out-File -Append -FilePath "$logFile"
 
 # Start Zabbix Agent 2 service
 Write-Host  ' >>> Starting service '
