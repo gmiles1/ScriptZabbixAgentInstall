@@ -17,7 +17,7 @@
 # .\zabbix_agent_install.ps1 -server <zabbix_server_address>
 
 # Zabbix Server IP parameters and Backup date for configuration files.
-param ($server, $port='')
+param ($server, $port='10050')
 if ($server -eq $null) {
     Write-Host  " You need to enter the zabbix server address. "
     exit 1
